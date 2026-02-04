@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    overflow-x: hidden;
+    color: #222;
+}
+
+/* ===================== */
+/* ESTRUCTURA GENERAL */
+/* ===================== */
+
+.header {
+    background: #0f172a;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    border-left: 5px solid #2563eb;
+    padding-left: 10px;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background: #e0e7ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* ===================== */
+/* CARDS */
+/* ===================== */
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+    min-width: 250px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===================== */
+/* CARRUSEL */
+/* ===================== */
+
+.cards {
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.arrow:hover {
+    background: #1e40af;
+}
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+
+.footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .section {
+        padding: 25px 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .card {
+        min-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .card {
+        min-width: 90%;
+    }
+}

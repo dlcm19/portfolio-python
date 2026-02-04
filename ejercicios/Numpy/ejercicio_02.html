@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Diccionario | Douglas Castillo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <style>
+        .code-box {
+            background: #0f172a;
+            color: #e5e7eb;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-family: monospace;
+            margin-top: 10px;
+        }
+
+        .output-box {
+            background: #f1f5f9;
+            border-left: 4px solid #2563eb;
+            padding: 15px;
+            margin-top: 10px;
+            font-family: monospace;
+        }
+
+        .back {
+            margin-top: 30px;
+            display: inline-block;
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Ejercicio 2 - Diccionario</h1>
+        <p>Crear e imprimir clave y valor </p>
+    </header>
+
+    <section class="section">
+
+        <h2>📘 Descripción</h2>
+        <p>
+          aquí creamos un diccionario e imprimimos su valor. 
+        </p>
+
+        <h2>🧠 Código Python</h2>
+        <div class="code-box">
+<pre>
+persona = {
+    "nombre": "Douglas",
+    "edad": 35,
+    "ciudad":"Bogotá"
+}
+
+    #Muestra toda la información en formato legible:
+print(persona["nombre"])
+
+print(f"👤  Nombre: {persona['nombre']}")
+print(f"🎂  Edad: {persona['edad']}")
+print(f"🏙️  Ciudad: {persona['ciudad']}")
+</pre>
+        </div>
+
+        <h2>🖥️ Resultado en consola</h2>
+        <div class="output-box">
+<pre>
+Douglas
+👤  Nombre: Douglas
+🎂  Edad: 35
+🏙️  Ciudad: Bogotá
+</pre>
+        </div>
+
+        <h2>✅ Qué aprendí</h2>
+        <ul>
+            <li>Crear un diccionario.</li>
+            <li>tiene clave-valor, característica: la clave es única, sensible a mayúsculas y minúsculas .</li>
+            <li>Imprimir su valor</li>
+        </ul>
+
+        <a href="../../index.html" class="back">← Volver al inicio</a>
+
+    </section>
+
+</body>
+</html>

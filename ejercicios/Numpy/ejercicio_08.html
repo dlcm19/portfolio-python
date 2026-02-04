@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8 - NumPy | Douglas Castillo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <style>
+        .code-box {
+            background: #0f172a;
+            color: #e5e7eb;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-family: monospace;
+            margin-top: 10px;
+        }
+
+        .output-box {
+            background: #f1f5f9;
+            border-left: 4px solid #2563eb;
+            padding: 15px;
+            margin-top: 10px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+
+        .back {
+            margin-top: 30px;
+            display: inline-block;
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Ejercicio 8 - NumPy</h1>
+        <p>Suma de columnas y filas, matriz 3x3.</p>
+    </header>
+
+    <section class="section">
+
+        <h2>📘 Descripción</h2>
+        <p>
+            aquí se realizo una matriz 3x3 aletoriamente y se suma sus columnas
+            y filas. 
+        </p>
+
+        <h2>🧠 Código Python</h2>
+        <div class="code-box">
+<pre>
+import numpy as np
+
+matriz = np.random.randint(1, 101, (3, 3))
+print(matriz)
+
+print(f"✅  Suma total de la fila del array : {matriz.sum(axis=1)}")
+print(f"✅  Suma total de la colimna del array : {matriz.sum(axis=0)}")
+
+
+</pre>
+        </div>
+
+        <h2>🖥️ Resultado en consola</h2>
+        <div class="output-box">
+<pre>
+[[28 22 65]
+ [20 83 81]
+ [43 79 33]]
+✅  Suma total de la fila del array : [115 184 155]
+✅  Suma total de la colimna del array : [ 91 184 179]
+</pre>
+        </div>
+
+        <h2>✅ Qué aprendí</h2>
+        <ul>
+            <li>Aprendí a realizar la suma de filas y columnas de una matriz.</li>
+            <li>Entendí la diferencia entre <code>axis=0</code> y <code>axis=1</code>.</li>
+            <li>Comprendí el uso del parámetro <code>axis</code> en NumPy.</li>
+        </ul>
+
+        <a href="../../index.html" class="back">← Volver al inicio</a>
+
+    </section>
+
+</body>
+</html>
