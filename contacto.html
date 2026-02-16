@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contáctame</title>
+    <link rel="stylesheet" href="css/styles.css">
+   
+</head>
+<body>
+
+    <!-- MENÚ -->
+    <!--Navegador-->
+   <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Douglas Castillo</div>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#contacto">Contáctame</a></li>
+        </ul>
+    </div>
+</nav>
+   <!--/Navegador-->
+
+    <main class="section">
+        <h2>Contáctame</h2>
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xbdayjqp" method="POST">
+            <input type="text" name="name"  placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="textarea" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar correo</button>
+        </form>
+
+        <a 
+          href="https://wa.me/+573243835284"
+          target="_blank"
+          class="whatsapp-btn">
+            Contactar por WhatsApp
+        </a>
+
+        <br><br>
+
+        <a href="index.html" class="back-btn">⬅ Volver al inicio</a>
+    </main>
+<script>
+    const form = document.getElementById("contactForm");
+
+if (form) {
+  form.addEventListener("submit", () => {
+    setTimeout(() => {
+      form.reset();
+    }, 100);
+  });
+}
+
+
+</script>
+</body>
+</html>
