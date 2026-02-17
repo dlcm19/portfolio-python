@@ -157,6 +157,68 @@ body {
 }
 
 /* ===================== */
+/* PANDAS CARRUSEL */
+/* ===================== */
+
+.card-pandas {
+    background-color: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+    min-width: 250px;
+}
+
+.card-pandas:hover {
+    transform: translateY(-5px);
+}
+.cards-pandas {
+    overflow: hidden;
+}
+
+.carousel-container-pandas {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.carousel-pandas {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 0;
+    
+}
+
+.carousel-pandas::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow-pandas {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.arrow-pandas:hover {
+    background: #1e40af;
+}
+
+/* ===================== */
+/* FIN PANDAS CARRUSEL */
+/* ===================== */
+
+/* ===================== */
 /* CONTACTO */
 /* ===================== */
 section {
@@ -253,6 +315,9 @@ section {
 
     .card {
         min-width: 80%;
+    }
+    .arrow-pandas{
+      display: none;  
     }
 }
 
